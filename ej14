@@ -1,0 +1,50 @@
+
+	import java.util.Scanner;
+
+	public class ejemplo14 {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Scanner Entrada = new Scanner(System.in);
+			      double suma;
+			      double salariot;
+
+                    System.out.println("Ingrese el valor de las ventas departamento 1: ");
+                    double Ventas1 = Entrada.nextDouble();
+                    System.out.println("Ingrese el valor de las ventas departamento 2: ");
+                    double Ventas2 = Entrada.nextDouble();
+                    System.out.println("Ingrese el valor de las ventas departamento 3: ");
+                    double Ventas3 = Entrada.nextDouble();
+
+                    System.out.println("Ingrese salario de los departamentos:  ");
+                    double salario  = Entrada.nextDouble();
+                       
+                     suma = Ventas1+Ventas2+Ventas3;
+                     salariot = (salario*0.2)+salario;
+                    
+                    if ((Ventas1) >= (suma/3) &&( Ventas2 >= (suma/3)) ) {
+                    	
+                    	
+                    	System.out.println("El valor más aumento a pagar para departamento 1 y 2 es : "+salariot );
+                    	
+                    	
+                    	
+                    	
+                    }
+                    if ( (Ventas2 >= suma/3) &&  (Ventas3 >= suma/3 ) ){
+                    	
+                    	
+                    	System.out.println("El valor más aumento a pagar para departamento 2 y 3 es : "+salariot );
+                    	
+                    }
+                    if ((Ventas1) >= (suma/3) && ( Ventas3 >= (suma/3)) ) {
+                    	
+	
+                    	System.out.println("El valor más aumento a pagar para departamento 1 y 3 es : "+salariot );
+	
+                     }
+                    
+                    
+		}
+		
+	}		
