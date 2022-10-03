@@ -8,7 +8,7 @@ public class Trapecio {
     double hipotenusa;
 
     public static double calcularArea(double baseMayor, double baseMenor, double altura){
-        return (baseMayor * baseMenor)/2 *altura;
+        return (baseMayor + baseMenor)/2 *altura;
     }
 
     public static double calcularPerimetro (double baseMayor, double baseMenor, double hipotenusa){
